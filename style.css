@@ -10,3 +10,8 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
+.thuoc-tinh {
+    font-family: Inter;
+    font-weight: bold;
+}
