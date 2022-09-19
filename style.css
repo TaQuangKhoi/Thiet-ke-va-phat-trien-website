@@ -5,3 +5,8 @@
 h1 {
     text-transform: uppercase;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
