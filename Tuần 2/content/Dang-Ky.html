@@ -6,9 +6,7 @@
     </head>
     <body>
         <h1>Đăng Ký Thành Viên</h1>
-        <table border="1"
-        cellspacing = "1"
-        cellpadding = "-1">
+        <table>
             <tr>
                 <td>
                     Họ Tên
@@ -50,7 +48,7 @@
                 </td>
                 <td>
                     <form>
-                        <input type="number"
+                        <input type="text"
                         name="sdt" value="0935198419">
                     </form>
                 </td>
@@ -68,6 +66,44 @@
                         name="gioi-tinh" value="Nu">Nữ
                     </form>
                 </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Quốc gia
+                </td>
+                <td>
+                    <form>
+                        <select name="quoc-gia">
+                            <option value="Viet Nam">Việt Nam</option>
+                            <option value="Lao">Lào</option>
+                            <option value="Campuchia">Campuchia</option>
+                            <option value="My">Mỹ</option>
+                            <option value="Anh">Anh</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Sở thích
+                </td>
+                <td>
+                    <form>
+                        <input type="checkbox"
+                        name="so-thich" value="Bóng đá">Lập trình
+                        <input type="checkbox"
+                        name="so-thich" value="Cầu lông">Chạy bộ
+                        <input type="checkbox"
+                        name="so-thich" value="Bóng rổ">Bơi lội
+                        <input type="checkbox"
+                        name="so-thich" value="Bóng chuyền">Dã ngoại
+                        <br>
+                        Khác:<input type="text" name="so-thich" value="Điền tên sở thích">
+                    </form>
+                </td>
+            </tr>
         </table>
     </body>
 </html>
