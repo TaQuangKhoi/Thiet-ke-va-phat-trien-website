@@ -169,7 +169,8 @@
                         <input type="color" name="mau">
                         <br>
                         Chọn file: 
-                        <input type="file" name="file">
+                        <input type="file" name="file"
+                        accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
                     </form>
                 </td>
             </tr>
@@ -190,6 +191,34 @@
                     </form>
                 </td>
             </tr>
+
+            <!-- Slider -->
+            <tr>
+                <td>
+                    Download process
+                </td>
+                <td>
+                    <form>
+                        <input type="range" name="download"
+                        max = 100
+                        value="38"> 38%
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Disks
+                </td>
+                <td>
+                    <label for="disk_d">Disk usage D:</label>
+                    <meter id="disk_d" value="0.6">60%</meter>
+                </td>
+            </tr>
+
+            
+
+            <!-- Submit -->
             <tr>
                 <td colspan="2">
                     <input type="submit" value="Đăng ký">
