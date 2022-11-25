@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <HTML>
 <head>
+    <meta charset="UTF-8">
     <title> Đăng nhập tài khoản </title>
     <style>
         body {
@@ -43,20 +44,23 @@ Mật khẩu :
     <input type="checkbox" id="coding" name="interest" value="coding">
     <label for="coding"> Ghi nhớ mật khẩu </label>
 </div>
-<a href="BANKEM.html"> <input type="button" id="dangnhap" onclick="dangnhap()" value="Đăng nhập"/>
-    <a href="dangkytaikhoanbankem.html"> <input type="button" value="Đăng ký"/>
-        <script type="text/javascript">
-            function dangnhap() {
-                var taikhoan = document.getElementById("taikhoan").value;
-                var matkhau = document.getElementById("matkhau").value;
-                if (a.search("a-zA-Z0-9")) {
-                    alert("Đăng nhập thành công");
-                    document.getElementById("taikhoan").value = "";
-                    document.getElementById("matkhau").value = "";
-                } else {
-                    alert("Tài khoản hoặc mật khẩu không đúng");
-                }
-            }
-        </script>
+<a href="BANKEM.html"/>
+<input type="button" id="dangnhap" onclick="dangnhap()" value="Đăng nhập"/>
+<a href="dangkytaikhoanbankem.html"/>
+<input type="button" value="Đăng ký"/>
+<script type="text/javascript">
+    function dangnhap() {
+        var taikhoan = document.getElementById("taikhoan").value;
+        var matkhau = document.getElementById("matkhau").value;
+
+        if (taikhoan.search("a-zA-Z0-9")
+            && taikhoan.length > 0
+            && matkhau.length > 0) {
+            alert("Đăng nhập thành công");
+        } else {
+            alert("Tài khoản hoặc mật khẩu không đúng");
+        }
+    }
+</script>
 </BODY>
 </HTML>
