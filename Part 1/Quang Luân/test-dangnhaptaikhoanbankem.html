@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <title> Đăng nhập tài khoản </title>
+    <style>
+        body {
+            background: lightblue;
+        }
+
+        h1 {
+            background-color: lightcyan;
+            color: red;
+            text-align: center;
+        }
+
+        h2 {
+            background-color: yellow;
+            color: blue;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<BODY>
+<h1> THIẾT KẾ VÀ PHÁT TRIỂN WEBSITE </h1>
+
+<h2> Đăng nhập tài khoản </h2>
+Tài khoản :
+<div class="input-group">
+    <span class="input-group-addon glyphicon glyphicon-user"> </span>
+    <input type="text" id="taikhoan" name="taikhoan" class="form-control" style="width:15%;" placeholder="Tài khoản"
+           required autofocus>
+</div>
+Mật khẩu :
+<div class="input-group">
+    <span class="glyphicon glyphicon-lock input-group-addon"></span>
+    <input type="password" id="matkhau" autocomplete="new-password" name="matkhau" class="form-control"
+           style="width:15%;" placeholder="Mật khẩu" required>
+</div>
+
+
+<div>
+    <input type="checkbox" id="coding" name="interest" value="coding">
+    <label for="coding"> Ghi nhớ mật khẩu </label>
+</div>
+<a href="BANKEM.html"> <input type="button" id="dangnhap" onclick="dangnhap()" value="Đăng nhập"/>
+    <a href="dangkytaikhoanbankem.html"> <input type="button" value="Đăng ký"/>
+        <script type="text/javascript">
+            function dangnhap() {
+                var taikhoan = document.getElementById("taikhoan").value;
+                var matkhau = document.getElementById("matkhau").value;
+                if (a.search("a-zA-Z0-9")) {
+                    alert("Đăng nhập thành công");
+                    document.getElementById("taikhoan").value = "";
+                    document.getElementById("matkhau").value = "";
+                } else {
+                    alert("Tài khoản hoặc mật khẩu không đúng");
+                }
+            }
+        </script>
+</BODY>
+</HTML>
