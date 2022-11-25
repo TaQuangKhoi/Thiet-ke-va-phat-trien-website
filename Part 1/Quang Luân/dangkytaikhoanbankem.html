@@ -1,113 +1,112 @@
 <!DOCTYPE html>
 <HTML>
 <head>
-<title> Đăng ký tài khoản </title>
-<style>
-body{
-background:lightblue;
-}
+    <title> Đăng ký tài khoản </title>
+    <style>
+        body {
+            background: lightblue;
+        }
 
-h1{ 
-	background-color:lightcyan;
-	color: red;
-	text-align:center;}
-h2{ 
-	background-color:yellow;
-	color: blue;
-	text-align:left;}
+        h1 {
+            background-color: lightcyan;
+            color: red;
+            text-align: center;
+        }
 
-a{
-text-decoration: none;
-}
+        h2 {
+            background-color: yellow;
+            color: blue;
+            text-align: left;
+        }
 
-a:link {
-color:RED;
-font-size:30px;
-background-color:green;
-}
+        a {
+            text-decoration: none;
+        }
 
-a:hover {
-color:RED;
-font-size:1.8em;
-text-decoration:blink;
-background-color:green;
-}
+        a:link {
+            color: RED;
+            font-size: 30px;
+            background-color: green;
+        }
 
-a:visited {
-color:red;
-text-decoration:underline;
-background-color:green;
-} 
+        a:hover {
+            color: RED;
+            font-size: 1.8em;
+            text-decoration: blink;
+            background-color: green;
+        }
 
-a:active {
-color:red;
-background-color:blue;
-}
+        a:visited {
+            color: red;
+            text-decoration: underline;
+            background-color: green;
+        }
 
-</style>
+        a:active {
+            color: red;
+            background-color: blue;
+        }
+
+    </style>
 </head>
 <BODY>
 <h1> THIẾT KẾ VÀ PHÁT TRIỂN WEBSITE </h1>
 
 <TABLE BORDER=1 BORDERCOLOR=BLACK CELLPADING=1 BGCOLOR=WHITE>
-<TR>
-<TD> <a href="DeBaiThietKe.html"> Giới thiệu </a> </TD>
-<TD> <a href="dangnhaptaikhoanbankem.html"> Đăng nhập </a> </TD>
-<TD> <a href="dangkytaikhoanbankem.html"> Đăng ký </a> </TD>
-</TR>
+    <TR>
+        <TD><a href="DeBaiThietKe.html"> Giới thiệu </a></TD>
+        <TD><a href="dangnhaptaikhoanbankem.html"> Đăng nhập </a></TD>
+        <TD><a href="dangkytaikhoanbankem.html"> Đăng ký </a></TD>
+    </TR>
 </TABLE>
 
 <h2> Đăng ký tài khoản </h2>
 
 
-Họ và tên :            <INPUT TYPE=TEXT> <BR> <BR>
-Năm sinh :             <input type="date" id="start" name="trip-start"> <BR> <BR>
-Giới tính :            
-    <div> 
-      <input type="radio" id="Nam" name="drone" value="Nam" checked>
-      <label for="Nam"> Nam </label>
-      <input type="radio" id="Nữ" name="drone" value="Nữ" checked>
-      <label for="Nữ"> Nữ </label>
-    </div> <BR>
-Quốc tịch:             <INPUT TYPE=TEXT> <BR> <BR>
-Dân tộc :              <INPUT TYPE=TEXT> <BR> <BR>
-Bằng cấp :             <INPUT TYPE=TEXT> <BR> <BR>
-Số CMND/CDDD :         <INPUT TYPE=TEXT> <BR> <BR>
-Địa chỉ :              <INPUT TYPE=TEXT> <BR> <BR>
-Email :                <INPUT TYPE="email" ID="email"> <BR> <BR>
-Số điện thoại :        <INPUT TYPE="tel" ID="phone" NAME="phone" PATTERN="[0-9]{3}-[0-9]{3}-[0-9]{4}" REQUIRED> <BR> <BR>
-Tài khoản :            <INPUT TYPE=TEXT> <BR> <BR>
-Mật khẩu :             <INPUT TYPE=PASSWORD> <BR> <BR>
-Nhập lại mật khẩu :    <INPUT TYPE=PASSWORD> <BR> 
-<p> Nơi ở hiện tại 
-<SELECT>
-	<OPTION> BR - VT </OPTION>
-	<OPTION> Hà Nội </OPTION>
-	<OPTION> TP HCM </OPTION>
-	<OPTION> Đà Nẵng </OPTION>
-	<OPTION> Hải Phòng </OPTION>
-</SELECT> </p>
+Họ và tên : <INPUT TYPE=TEXT> <BR> <BR>
+Năm sinh : <input type="date" id="start" name="trip-start"> <BR> <BR>
+Giới tính :
+<div>
+    <input type="radio" id="Nam" name="drone" value="Nam" checked>
+    <label for="Nam"> Nam </label>
+    <input type="radio" id="Nữ" name="drone" value="Nữ" checked>
+    <label for="Nữ"> Nữ </label>
+</div>
+<BR>
+Quốc tịch: <INPUT TYPE=TEXT> <BR> <BR>
+Dân tộc : <INPUT TYPE=TEXT> <BR> <BR>
+Bằng cấp : <INPUT TYPE=TEXT> <BR> <BR>
+Số CMND/CDDD : <INPUT TYPE=TEXT> <BR> <BR>
+Địa chỉ : <INPUT TYPE=TEXT> <BR> <BR>
+Email : <INPUT TYPE="email" ID="email"> <BR> <BR>
+Số điện thoại : <INPUT TYPE="tel" ID="phone" NAME="phone" PATTERN="[0-9]{3}-[0-9]{3}-[0-9]{4}" REQUIRED> <BR> <BR>
+Tài khoản : <INPUT TYPE=TEXT> <BR> <BR>
+Mật khẩu : <INPUT TYPE=PASSWORD> <BR> <BR>
+Nhập lại mật khẩu : <INPUT TYPE=PASSWORD> <BR>
+<p> Nơi ở hiện tại
+    <SELECT>
+        <OPTION> BR - VT</OPTION>
+        <OPTION> Hà Nội</OPTION>
+        <OPTION> TP HCM</OPTION>
+        <OPTION> Đà Nẵng</OPTION>
+        <OPTION> Hải Phòng</OPTION>
+    </SELECT></p>
 <input type="button" id="dangky" onclick="dangky()" value="Đăng ký"/> <br> <br>
-<script type="text/javascript"> 
-function dangky() 
-{
-		var a = document.getElementById("dangky").value;
-		if(a.search("a-zA-Z0-9"))
-		{
-		  alert("Tài khoản hoặc mật khẩu không đúng");
-		  document.getElementById("taikhoan").value="";
-		  
-		}
-		else  alert("Đăng nhập thành công");
+<script type="text/javascript">
+    function dangky() {
+        var a = document.getElementById("dangky").value;
+        if (a.search("a-zA-Z0-9")) {
+            alert("Tài khoản hoặc mật khẩu không đúng");
+            document.getElementById("taikhoan").value = "";
 
-		var a = document.getElementById("matkhau").value;
-		if(a.search("a-zA-Z0-9"))
-		{
-		  alert("Tài khoản hoặc mật khẩu không đúng");
-		  document.getElementById("matkhau").value="";	
-		}
-		else  alert("Đăng nhập thành công");
-}
+        } else alert("Đăng nhập thành công");
+
+        var a = document.getElementById("matkhau").value;
+        if (a.search("a-zA-Z0-9")) {
+            alert("Tài khoản hoặc mật khẩu không đúng");
+            document.getElementById("matkhau").value = "";
+        } else alert("Đăng nhập thành công");
+    }
 </script>
 </BODY>
 </HTML>
