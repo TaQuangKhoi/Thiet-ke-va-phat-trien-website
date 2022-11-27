@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Trang chủ của bài thiết kế </title>
+    <style>
+        body {
+            background: lightblue;
+        }
+
+        h1 {
+            background-color: lightcyan;
+            color: red;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: RED;
+            font-size: 30px;
+            background-color: green;
+        }
+
+        a:hover {
+            color: RED;
+            font-size: 1.8em;
+            text-decoration: blink;
+            background-color: green;
+        }
+
+        a:visited {
+            color: red;
+            text-decoration: underline;
+            background-color: green;
+        }
+
+        a:active {
+            color: red;
+            background-color: blue;
+        }
+
+        .p_gold {
+            text-align: left;
+            color: blue;
+            font-size: 20px;
+            background-color: gold;
+            text-weight: bold;
+        }
+
+        .p_white {
+            text-align: left;
+            background-color: white;
+        }
+
+        .p_lightcyan {
+            text-align: center;
+            font-size: 20px;
+            background-color: lightcyan;
+            text-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1> THIẾT KẾ VÀ PHÁT TRIỂN WEBSITE </h1>
+<TABLE BORDER=1 BORDERCOLOR=BLACK CELLPADING=1 BGCOLOR=WHITE>
+    <TR>
+        <TD><a href="BANKEM.html"> Trang chủ </a></TD>
+        <TD><a href="LienHe.html"> Liên hệ </a></TD>
+    </TR>
+</TABLE>
+<p class="p_gold"> TRANG CHỦ VỀ BÁN CÁC LOẠI QUE KEM </p>
+
+<TABLE BORDER=1 BORDERCOLOR=BLACK CELLPADING=1 BGCOLOR=WHITE>
+
+    <TR style="background-color:darkblue">
+        <TD><p class=p_lightcyan"><b> Hình ảnh mỗi loại que kem </b></p></TD>
+        <TD style="width:15%;"><p class=p_lightcyan"><b> Tên que kem </b></p></TD>
+        <TD style="width:15%;"><p class=p_lightcyan"><b> Đơn giá </b></p></TD>
+        <TD><p class=p_lightcyan"><b> Số lượng </b></p></TD>
+    </TR>
+
+    <TR>
+        <TD><IMG SRC="socola.JFIF"></TD>
+        <TD> Kem socola</TD>
+        <TD> 30000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+
+    <TR>
+        <TD><IMG SRC="kemsuadua.JFIF"></TD>
+        <TD> Kem sữa dừa</TD>
+        <TD> 25000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+
+    <TR>
+        <TD><IMG SRC="dautay.JFIF"></TD>
+        <TD> Kem dâu tây</TD>
+        <TD> 35000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+
+
+    <TR>
+        <TD><IMG SRC="duahau.JFIF"></TD>
+        <TD> Kem dưa hấu</TD>
+        <TD> 30000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+
+
+    <TR>
+        <TD><IMG SRC="dauxanh.JFIF"></TD>
+        <TD> Kem đậu xanh</TD>
+        <TD> 30000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+
+
+    <TR>
+        <TD><IMG SRC="chuoi.JPG"></TD>
+        <TD> Kem chuối</TD>
+        <TD> 25000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+
+
+    <TR>
+        <TD><IMG SRC="daudo.JPG"></TD>
+        <TD> Kem đậu đỏ</TD>
+        <TD> 40000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+
+
+    <TR>
+        <TD><IMG SRC="celano.JFIF"></TD>
+        <TD> Kem Celano</TD>
+        <TD> 45000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+
+
+    <TR>
+        <TD><IMG SRC="saurieng.JFIF"></TD>
+        <TD> Kem sầu riêng</TD>
+        <TD> 50000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+
+
+    <TR>
+        <TD><IMG SRC="kemcauvong.JFIF"></TD>
+        <TD> Kem cầu vồng</TD>
+        <TD> 35000 đồng</TD>
+        <TD><input type="number"></TD>
+    </TR>
+</TABLE>
+
+Mua kem socola: <input type="text" id="so1" onkeyup="kiemtraso1()"/> <br> <br>
+Mua kem sữa dừa: <input type="text" id="so2" onkeyup="kiemtraso2()"/> <br> <br>
+Mua kem dâu tây: <input type="text" id="so3" onkeyup="kiemtraso3()"/> <br> <br>
+Mua kem dưa hấu: <input type="text" id="so4" onkeyup="kiemtraso4()"/> <br> <br>
+Mua kem đậu xanh: <input type="text" id="so5" onkeyup="kiemtraso5()"/> <br> <br>
+Mua kem chuối: <input type="text" id="so6" onkeyup="kiemtraso6()"/> <br> <br>
+Mua kem đậu đỏ: <input type="text" id="so7" onkeyup="kiemtraso7()"/> <br> <br>
+Mua kem Celano: <input type="text" id="so8" onkeyup="kiemtraso8()"/> <br> <br>
+Mua kem sầu riêng: <input type="text" id="so9" onkeyup="kiemtraso9()"/> <br> <br>
+Mua kem cầu vồng: <input type="text" id="so10" onkeyup="kiemtraso10()"/> <br> <br>
+<input type="button" id="tongsotien" onclick="tongsotien()" value="Tổng số tiền mua kem"/>
+<input type="text" id="kq"/> đồng
+<br> <br>
+<button onclick="muahang()"> Mua hàng</button>
+<script>
+    function muahang(){
+        alert(confirm('Bạn có muốn mua hàng không ?') ? 'Bạn đã mua hàng thành công' : 'Bạn đã hủy mua hàng');
+    }
+    function tongsotien() {
+        var a = document.getElementById("so1").value;
+        var b = document.getElementById("so2").value;
+        var c = document.getElementById("so3").value;
+        var d = document.getElementById("so4").value;
+        var e = document.getElementById("so5").value;
+        var f = document.getElementById("so6").value;
+        var g = document.getElementById("so7").value;
+        var h = document.getElementById("so8").value;
+        var i = document.getElementById("so9").value;
+        var j = document.getElementById("so10").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+        d = parseInt(d);
+        e = parseInt(e);
+        f = parseInt(f);
+        g = parseInt(g);
+        h = parseInt(h);
+        i = parseInt(i);
+        j = parseInt(j);
+        var kq = a + b + c + d + e + f + g + h + i + j;
+        document.getElementById("kq").value = kq;
+    }
+
+    function kiemtraso1() {
+        var a = document.getElementById("so1").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so1").value = "";
+        }
+    }
+
+    function kiemtraso2() {
+        var a = document.getElementById("so2").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so2").value = "";
+        }
+    }
+
+    function kiemtraso3() {
+        var a = document.getElementById("so3").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so3").value = "";
+        }
+    }
+
+    function kiemtraso4() {
+        var a = document.getElementById("so4").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so4").value = "";
+        }
+    }
+
+    function kiemtraso5() {
+        var a = document.getElementById("so5").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so5").value = "";
+        }
+    }
+
+    function kiemtraso6() {
+        var a = document.getElementById("so6").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so6").value = "";
+        }
+    }
+
+    function kiemtraso7() {
+        var a = document.getElementById("so7").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so7").value = "";
+        }
+    }
+
+    function kiemtraso8() {
+        var a = document.getElementById("so8").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so8").value = "";
+        }
+    }
+
+    function kiemtraso9() {
+        var a = document.getElementById("so9").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so9").value = "";
+        }
+    }
+
+    function kiemtraso10() {
+        var a = document.getElementById("so10").value;
+        if (isNaN(a) == true) {
+            alert("không phải số tiền:");
+            document.getElementById("so10").value = "";
+        }
+    }
+</script>
+</body>
+
+</HTML>

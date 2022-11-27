@@ -44,9 +44,7 @@ Mật khẩu :
     <input type="checkbox" id="coding" name="interest" value="coding">
     <label for="coding"> Ghi nhớ mật khẩu </label>
 </div>
-<a href="BANKEM.html"/>
 <input type="button" id="dangnhap" onclick="dangnhap()" value="Đăng nhập"/>
-<a href="dangkytaikhoanbankem.html"/>
 <input type="button" value="Đăng ký"/>
 <script type="text/javascript">
     function dangnhap() {
@@ -55,10 +53,15 @@ Mật khẩu :
 
         if (taikhoan.search("a-zA-Z0-9")
             && taikhoan.length > 0
-            && matkhau.length > 0) {
+            && matkhau.length > 0
+            && taikhoan == "nguyenquangluan"
+            && matkhau == "123456") {
+
             alert("Đăng nhập thành công");
+            window.location = 'http://www.google.com';
+
         } else {
-            alert("Tài khoản hoặc mật khẩu không đúng");
+            alert("Đăng nhập thất bại");
         }
     }
 </script>
